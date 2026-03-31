@@ -1,6 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+const trustLogos = [
+  { name: "MOEX", src: "/logos/moex.svg", invert: true, w: 80 },
+  { name: "Finam", src: "/logos/finam.svg", invert: false, w: 70 },
+  { name: "MEXC", src: "/logos/mexc.svg", invert: true, w: 80 },
+  { name: "A7A5", src: "/logos/a7a5.svg", invert: false, w: 60 },
+];
 
 export default function Hero() {
   return (
@@ -160,14 +168,17 @@ export default function Hero() {
           className="mt-12 flex flex-col items-center gap-3"
         >
           <p className="text-xs uppercase tracking-widest text-zinc-500">При участии</p>
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            {["MOEX", "Finam", "MEXC", "A7A5"].map((name) => (
-              <span
-                key={name}
-                className="rounded-lg border border-card-border bg-white/[0.03] px-4 py-2 text-sm font-semibold text-zinc-300 backdrop-blur-sm"
-              >
-                {name}
-              </span>
+          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+            {trustLogos.map((logo) => (
+              <div key={logo.name} className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.w}
+                  height={30}
+                  className={`h-6 w-auto object-contain ${logo.invert ? "brightness-0 invert" : ""}`}
+                />
+              </div>
             ))}
           </div>
         </motion.div>
