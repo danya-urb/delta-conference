@@ -43,8 +43,11 @@ const benefits = [
 
 export default function WhyAttend() {
   return (
-    <section className="relative py-20 px-5">
-      <div className="mx-auto max-w-5xl">
+    <section className="relative py-20 px-5 overflow-hidden section-glow-right">
+      {/* Decorative */}
+      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[400px] w-[600px] rounded-full bg-accent/4 blur-[120px]" />
+
+      <div className="relative z-10 mx-auto max-w-5xl">
         <AnimatedSection className="text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">
             Зачем приходить
@@ -57,8 +60,8 @@ export default function WhyAttend() {
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {benefits.map((b, i) => (
             <AnimatedSection key={b.title} delay={i * 0.07}>
-              <div className="group relative rounded-xl border border-card-border bg-card-bg p-6 backdrop-blur-sm transition-colors hover:border-zinc-700">
-                <div className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent">
+              <div className="card-accent-top group relative rounded-xl border border-card-border bg-card-bg p-6 backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-accent/15 text-accent ring-1 ring-accent/20">
                   {b.icon}
                 </div>
                 <h3 className="text-base font-semibold">{b.title}</h3>

@@ -5,9 +5,36 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden hero-gradient grid-pattern">
-      {/* Decorative top-left glow */}
-      <div className="pointer-events-none absolute -top-40 -left-40 h-[500px] w-[500px] rounded-full bg-accent/5 blur-[120px]" />
-      <div className="pointer-events-none absolute -bottom-40 -right-40 h-[400px] w-[400px] rounded-full bg-purple-500/5 blur-[100px]" />
+      {/* Decorative glows */}
+      <div className="pointer-events-none absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-accent/8 blur-[150px] animate-float-slow" />
+      <div className="pointer-events-none absolute -bottom-40 -right-40 h-[500px] w-[500px] rounded-full bg-purple-500/6 blur-[120px] animate-float" />
+      <div className="pointer-events-none absolute top-1/3 right-1/4 h-[200px] w-[200px] rounded-full bg-accent/5 blur-[80px] animate-pulse-glow" />
+
+      {/* Decorative floating dots */}
+      <div className="pointer-events-none absolute inset-0">
+        {[
+          { top: "15%", left: "10%", size: 3, delay: 0 },
+          { top: "25%", left: "85%", size: 2, delay: 1 },
+          { top: "70%", left: "15%", size: 2, delay: 2 },
+          { top: "60%", left: "80%", size: 3, delay: 0.5 },
+          { top: "40%", left: "5%", size: 2, delay: 1.5 },
+          { top: "80%", left: "90%", size: 2, delay: 3 },
+          { top: "10%", left: "50%", size: 2, delay: 2.5 },
+          { top: "50%", left: "95%", size: 3, delay: 1 },
+        ].map((dot, i) => (
+          <motion.div
+            key={i}
+            className="absolute rounded-full bg-accent/30"
+            style={{ top: dot.top, left: dot.left, width: dot.size, height: dot.size }}
+            animate={{ opacity: [0.2, 0.6, 0.2], y: [0, -10, 0] }}
+            transition={{ duration: 4, delay: dot.delay, repeat: Infinity, ease: "easeInOut" }}
+          />
+        ))}
+      </div>
+
+      {/* Decorative horizontal lines */}
+      <div className="pointer-events-none absolute top-[20%] left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/10 to-transparent" />
+      <div className="pointer-events-none absolute bottom-[25%] left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/8 to-transparent" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-5 py-32 text-center">
         {/* Badge */}
@@ -15,9 +42,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-card-border bg-card-bg px-4 py-1.5 text-xs tracking-wide text-muted backdrop-blur-sm"
+          className="mb-8 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-4 py-1.5 text-xs tracking-wide text-zinc-300 backdrop-blur-sm"
         >
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent animate-pulse-glow" />
           Частная индустриальная конференция &middot; Москва &middot; 23 апреля
         </motion.div>
 
