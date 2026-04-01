@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Delta arrow/cursor icon -->
+  <path d="M8 4L38 30L8 56L16 30Z" fill="white"/>
+  <circle cx="30" cy="16" r="5" fill="white"/>
+  <!-- Delta text -->
+  <text x="50" y="43" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" fill="white" letter-spacing="-1">Delta</text>
+</svg>

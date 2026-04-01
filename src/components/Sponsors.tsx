@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
 export default function Sponsors() {
@@ -20,17 +21,15 @@ export default function Sponsors() {
         </AnimatedSection>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
-          {/* TODO: Replace placeholder with actual Cashers logo */}
           <AnimatedSection delay={0.05}>
             <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg p-8 backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_40px_rgba(99,102,241,0.08)]">
-              {/* Card inner glow */}
               <div className="pointer-events-none absolute -top-20 -right-20 h-[200px] w-[200px] rounded-full bg-accent/5 blur-[60px] transition-opacity group-hover:opacity-100 opacity-50" />
               <div className="relative">
                 <span className="mb-4 inline-block rounded-full bg-accent/10 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent">
                   Генеральный партнёр
                 </span>
-                <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg border border-dashed border-zinc-700/50 bg-zinc-900/50 text-sm font-medium text-zinc-500">
-                  Cashers Logo
+                <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg bg-zinc-900/50">
+                  <Image src="/logos/cashers.svg" alt="Cashers" width={160} height={36} className="h-8 w-auto" />
                 </div>
                 <h3 className="text-lg font-semibold">Cashers</h3>
                 <p className="mt-1 text-sm text-muted">Обменный сервис</p>
@@ -38,17 +37,15 @@ export default function Sponsors() {
             </div>
           </AnimatedSection>
 
-          {/* TODO: Replace placeholder with actual Delta Prop logo */}
           <AnimatedSection delay={0.1}>
             <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg p-8 backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_40px_rgba(99,102,241,0.08)]">
-              {/* Card inner glow */}
               <div className="pointer-events-none absolute -top-20 -left-20 h-[200px] w-[200px] rounded-full bg-purple-500/5 blur-[60px] transition-opacity group-hover:opacity-100 opacity-50" />
               <div className="relative">
                 <span className="mb-4 inline-block rounded-full bg-purple-500/10 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-purple-400">
                   Партнёр
                 </span>
-                <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg border border-dashed border-zinc-700/50 bg-zinc-900/50 text-sm font-medium text-zinc-500">
-                  Delta Prop Logo
+                <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg bg-zinc-900/50">
+                  <Image src="/logos/delta.svg" alt="Delta Prop" width={140} height={36} className="h-7 w-auto" />
                 </div>
                 <h3 className="text-lg font-semibold">Delta Prop</h3>
                 <p className="mt-1 text-sm text-muted">Проп-компания</p>

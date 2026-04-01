@@ -1,3 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" fill="none">
-  <text x="0" y="38" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="-1">A7A5</text>
+  <!-- A -->
+  <path d="M5 42L18 8H24L37 42H31L28 34H14L11 42H5ZM16 28H26L21 14L16 28Z" fill="#E53E3E"/>
+  <!-- 7 -->
+  <path d="M42 8H62V14L50 42H44L56 14H42V8Z" fill="#DD6B20"/>
+  <!-- A -->
+  <path d="M68 42L81 8H87L100 42H94L91 34H77L74 42H68ZM79 28H89L84 14L79 28Z" fill="#E53E3E"/>
+  <!-- 5 -->
+  <path d="M106 8H126V14H112V22H122C128 22 132 26 132 32C132 38 128 42 122 42H106V36H122C124 36 126 34 126 32C126 30 124 28 122 28H106V8Z" fill="#DD6B20"/>
 </svg>

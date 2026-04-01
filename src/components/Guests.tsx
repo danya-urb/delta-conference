@@ -12,7 +12,7 @@ const guests = [
     invert: true,
   },
   {
-    name: "Finam",
+    name: "Финам",
     full: "Финам",
     desc: "Ведущий брокер и инвестиционная компания. Мост между вами и рынком.",
     logo: "/logos/finam.svg",
@@ -31,6 +31,7 @@ const guests = [
     desc: "Технологии и инфраструктура. Строят то, на чём работает рынок.",
     logo: "/logos/a7a5.svg",
     invert: false,
+    height: 28,
   },
 ];
 
