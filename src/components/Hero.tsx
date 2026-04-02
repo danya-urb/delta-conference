@@ -7,7 +7,7 @@ const trustLogos = [
   { name: "MOEX", src: "/logos/moex.svg", invert: true, w: 80 },
   { name: "Finam", src: "/logos/finam.svg", invert: false, w: 70 },
   { name: "MEXC", src: "/logos/mexc.svg", invert: true, w: 80 },
-  { name: "A7A5", src: "/logos/a7a5.svg", invert: false, w: 60 },
+  { name: "CIFRA markets", src: "/logos/cifra.svg", invert: false, w: 100 },
 ];
 
 export default function Hero() {

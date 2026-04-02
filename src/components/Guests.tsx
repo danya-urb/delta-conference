@@ -26,12 +26,11 @@ const guests = [
     invert: true,
   },
   {
-    name: "A7A5",
-    full: "A7A5",
-    desc: "Технологии и инфраструктура. Строят то, на чём работает рынок.",
-    logo: "/logos/a7a5.svg",
+    name: "CIFRA markets",
+    full: "CIFRA markets",
+    desc: "Брокерская платформа нового поколения. Технологии и инфраструктура рынков.",
+    logo: "/logos/cifra.svg",
     invert: false,
-    height: 28,
   },
 ];
 
