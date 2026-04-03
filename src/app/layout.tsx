@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Delta Community — Частная конференция | 23 апреля, Москва",
   description:
     "Закрытая конференция для профессиональных трейдеров и арбитражников. Дельта-нейтральные стратегии, инфраструктура рынков, нетворкинг.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
