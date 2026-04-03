@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const trustLogos = [
-  { name: "MOEX", src: "/logos/moex.svg", invert: true, w: 80 },
   { name: "Finam", src: "/logos/finam.svg", invert: false, w: 70 },
   { name: "MEXC", src: "/logos/mexc.svg", invert: true, w: 80 },
   { name: "CIFRA markets", src: "/logos/cifra.svg", invert: false, w: 100 },
