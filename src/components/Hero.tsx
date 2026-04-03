@@ -136,13 +136,17 @@ export default function Hero() {
         >
           {/* TODO: Replace href with actual ticket purchase link / payment integration */}
           <a
-            href="#tickets"
+            href="https://qtickets.ru/event/226851"
+            target="_blank"
+            rel="noopener noreferrer"
             className="glow-accent-strong inline-flex h-14 items-center justify-center rounded-xl bg-accent px-10 text-base font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
           >
             Купить билет
           </a>
           <a
-            href="#partners"
+            href="https://t.me/businessadam"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-14 items-center justify-center rounded-xl border border-card-border bg-white/5 px-8 text-base font-medium text-zinc-200 backdrop-blur-sm transition-all hover:border-accent/30 hover:bg-white/10 hover:text-white"
           >
             Стать партнёром

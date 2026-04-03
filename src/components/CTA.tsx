@@ -54,13 +54,17 @@ export default function CTA() {
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
           {/* TODO: Replace href with actual ticket purchase link / payment integration */}
           <a
-            href="#tickets"
+            href="https://qtickets.ru/event/226851"
+            target="_blank"
+            rel="noopener noreferrer"
             className="glow-accent-strong inline-flex h-14 items-center justify-center rounded-xl bg-accent px-10 text-base font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
           >
             Забронировать место
           </a>
           <a
-            href="#partners"
+            href="https://t.me/businessadam"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-14 items-center justify-center rounded-xl border border-card-border bg-white/5 px-8 text-base font-medium text-zinc-200 backdrop-blur-sm transition-all hover:border-accent/30 hover:bg-white/10 hover:text-white"
           >
             Стать партнёром
@@ -69,9 +73,6 @@ export default function CTA() {
 
         <p className="mt-4 text-sm font-medium text-accent/80">
           Осталось менее 30 мест
-        </p>
-        <p className="mt-2 text-xs text-zinc-600">
-          Оплата будет подключена в ближайшее время. Оставьте заявку — мы свяжемся с вами.
         </p>
       </motion.div>
     </section>

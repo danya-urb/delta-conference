@@ -39,8 +39,6 @@ export default function Footer() {
       <div className="relative z-10 mx-auto mt-6 max-w-5xl">
         <p className="text-center text-[10px] text-zinc-700">
           &copy; {new Date().getFullYear()} Delta Community. Все права защищены.
-          {/* TODO: Payment integration notice — remove once payments are live */}
-          {" "}Интеграция оплаты будет подключена позже.
         </p>
       </div>
     </footer>
