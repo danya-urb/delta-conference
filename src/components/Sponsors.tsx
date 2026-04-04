@@ -50,7 +50,7 @@ export default function Sponsors() {
                   Партнёр
                 </span>
                 <div className="mb-4 flex h-16 w-full items-center justify-center">
-                  <img src="/logos/cashers.png" alt="Cashers" className="h-14 w-auto object-contain" />
+                  <img src="/logos/cashers.png" alt="Cashers" className="h-32 w-auto object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Cashers</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">

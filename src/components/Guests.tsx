@@ -8,7 +8,7 @@ const guests = [
     full: "Финам",
     desc: "Ведущий брокер и инвестиционная компания. Мост между вами и рынком.",
     logo: "/logos/finam.png",
-    cls: "h-12",
+    cls: "h-16",
   },
   {
     name: "MEXC",
