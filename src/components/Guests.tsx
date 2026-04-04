@@ -8,25 +8,28 @@ const guests = [
     full: "Финам",
     desc: "Ведущий брокер и инвестиционная компания. Мост между вами и рынком.",
     logo: "/logos/finam.png",
+    cls: "h-12",
   },
   {
     name: "MEXC",
     full: "MEXC Global",
     desc: "Международная криптовалютная биржа. Глобальная ликвидность и листинг.",
     logo: "/logos/mexc.svg",
-    invert: true,
+    cls: "h-8 brightness-0 invert",
   },
   {
     name: "CIFRA markets",
     full: "CIFRA markets",
     desc: "Брокерская платформа нового поколения. Технологии и инфраструктура рынков.",
-    logo: "/logos/cifra.png",
+    logo: "/logos/cifra.svg",
+    cls: "h-7",
   },
   {
     name: "Delta",
     full: "Delta Prop",
     desc: "Проп-трейдинговая компания с уникальными решениями для арбитража.",
     logo: "/logos/delta.png",
+    cls: "h-10",
   },
 ];
 
@@ -61,7 +64,7 @@ export default function Guests() {
                   <img
                     src={g.logo}
                     alt={g.name}
-                    className={`h-10 w-auto object-contain ${"invert" in g && g.invert ? "brightness-0 invert" : ""}`}
+                    className={`w-auto object-contain ${g.cls}`}
                   />
                 </div>
                 <h3 className="text-base font-semibold">{g.name}</h3>

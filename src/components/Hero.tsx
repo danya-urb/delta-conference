@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const trustLogos = [
-  { name: "Finam", src: "/logos/finam.png", invert: false, w: 80 },
-  { name: "MEXC", src: "/logos/mexc.svg", invert: true, w: 80 },
-  { name: "CIFRA markets", src: "/logos/cifra.png", invert: false, w: 100 },
-  { name: "Delta", src: "/logos/delta.png", invert: false, w: 70 },
+  { name: "Finam", src: "/logos/finam.png", cls: "h-7" },
+  { name: "MEXC", src: "/logos/mexc.svg", cls: "h-5 brightness-0 invert" },
+  { name: "CIFRA markets", src: "/logos/cifra.svg", cls: "h-5" },
+  { name: "Delta", src: "/logos/delta.png", cls: "h-7" },
 ];
 
 export default function Hero() {
@@ -177,7 +177,7 @@ export default function Hero() {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className={`h-6 w-auto object-contain ${logo.invert ? "brightness-0 invert" : ""}`}
+                  className={`w-auto object-contain ${logo.cls}`}
                 />
               </div>
             ))}
