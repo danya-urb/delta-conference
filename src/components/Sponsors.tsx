@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
 export default function Sponsors() {
@@ -29,7 +28,7 @@ export default function Sponsors() {
                   Генеральный партнёр
                 </span>
                 <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg bg-zinc-900/50">
-                  <Image src="/logos/cashers.png" alt="Cashers" width={180} height={48} className="h-10 w-auto object-contain" />
+                  <img src="/logos/cashers.png" alt="Cashers" className="h-10 w-auto object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Cashers</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -48,7 +47,7 @@ export default function Sponsors() {
                   Партнёр
                 </span>
                 <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg bg-zinc-900/50">
-                  <Image src="/logos/delta.png" alt="Delta Prop" width={160} height={48} className="h-10 w-auto object-contain" />
+                  <img src="/logos/delta.png" alt="Delta Prop" className="h-10 w-auto object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Delta Prop</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">

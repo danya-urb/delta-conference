@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
 const guests = [
@@ -59,11 +58,9 @@ export default function Guests() {
             <AnimatedSection key={g.name} delay={i * 0.07}>
               <div className="group flex flex-col items-center rounded-xl border border-card-border bg-card-bg p-6 text-center backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
                 <div className="mb-4 flex h-12 w-full items-center justify-center">
-                  <Image
+                  <img
                     src={g.logo}
                     alt={g.name}
-                    width={140}
-                    height={48}
                     className={`h-10 w-auto object-contain ${"invert" in g && g.invert ? "brightness-0 invert" : ""}`}
                   />
                 </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const trustLogos = [
@@ -175,11 +174,9 @@ export default function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
             {trustLogos.map((logo) => (
               <div key={logo.name} className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
-                <Image
+                <img
                   src={logo.src}
                   alt={logo.name}
-                  width={logo.w}
-                  height={30}
                   className={`h-6 w-auto object-contain ${logo.invert ? "brightness-0 invert" : ""}`}
                 />
               </div>
