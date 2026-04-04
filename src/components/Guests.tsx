@@ -22,7 +22,7 @@ const guests = [
     full: "CIFRA markets",
     desc: "Брокерская платформа нового поколения. Технологии и инфраструктура рынков.",
     logo: "/logos/cifra.svg",
-    cls: "h-7",
+    cls: "h-6 brightness-0 invert",
   },
   {
     name: "Delta",
