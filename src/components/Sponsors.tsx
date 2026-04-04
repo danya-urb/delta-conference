@@ -54,8 +54,8 @@ export default function Sponsors() {
                 </div>
                 <h3 className="text-lg font-semibold">Cashers</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
-                  Ваш надёжный крипто-консьерж с&nbsp;2021&nbsp;г.
-                  Безопасные офисы во&nbsp;всех крупных городах.
+                  Крипто-карта для расчётов за&nbsp;рубежом.
+                  Покупка и&nbsp;продажа криптовалюты без&nbsp;P2P.
                 </p>
               </div>
             </div>
