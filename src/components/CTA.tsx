@@ -72,7 +72,7 @@ export default function CTA() {
         </div>
 
         <p className="mt-4 text-sm font-medium text-accent/80">
-          Осталось менее 30 мест
+          Осталось всего 60 мест
         </p>
       </motion.div>
     </section>

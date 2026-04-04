@@ -8,8 +8,7 @@ const guests = [
     name: "Финам",
     full: "Финам",
     desc: "Ведущий брокер и инвестиционная компания. Мост между вами и рынком.",
-    logo: "/logos/finam.svg",
-    invert: false,
+    logo: "/logos/finam.png",
   },
   {
     name: "MEXC",
@@ -22,8 +21,13 @@ const guests = [
     name: "CIFRA markets",
     full: "CIFRA markets",
     desc: "Брокерская платформа нового поколения. Технологии и инфраструктура рынков.",
-    logo: "/logos/cifra.svg",
-    invert: false,
+    logo: "/logos/cifra.png",
+  },
+  {
+    name: "Delta",
+    full: "Delta Prop",
+    desc: "Проп-трейдинговая компания с уникальными решениями для арбитража.",
+    logo: "/logos/delta.png",
   },
 ];
 
@@ -54,14 +58,13 @@ export default function Guests() {
           {guests.map((g, i) => (
             <AnimatedSection key={g.name} delay={i * 0.07}>
               <div className="group flex flex-col items-center rounded-xl border border-card-border bg-card-bg p-6 text-center backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
-                {/* Real logo */}
-                <div className="mb-4 flex h-16 w-full items-center justify-center">
+                <div className="mb-4 flex h-12 w-full items-center justify-center">
                   <Image
                     src={g.logo}
                     alt={g.name}
-                    width={120}
-                    height={40}
-                    className={`h-8 w-auto object-contain ${g.invert ? "brightness-0 invert" : ""}`}
+                    width={140}
+                    height={48}
+                    className={`h-10 w-auto object-contain ${"invert" in g && g.invert ? "brightness-0 invert" : ""}`}
                   />
                 </div>
                 <h3 className="text-base font-semibold">{g.name}</h3>

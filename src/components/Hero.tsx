@@ -4,9 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const trustLogos = [
-  { name: "Finam", src: "/logos/finam.svg", invert: false, w: 70 },
+  { name: "Finam", src: "/logos/finam.png", invert: false, w: 80 },
   { name: "MEXC", src: "/logos/mexc.svg", invert: true, w: 80 },
-  { name: "CIFRA markets", src: "/logos/cifra.svg", invert: false, w: 100 },
+  { name: "CIFRA markets", src: "/logos/cifra.png", invert: false, w: 100 },
+  { name: "Delta", src: "/logos/delta.png", invert: false, w: 70 },
 ];
 
 export default function Hero() {
@@ -160,7 +161,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-5 text-sm text-accent/80 font-medium"
         >
-          Осталось менее 30 мест
+          Осталось всего 60 мест
         </motion.p>
 
         {/* Trust strip — participants */}

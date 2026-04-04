@@ -29,10 +29,13 @@ export default function Sponsors() {
                   Генеральный партнёр
                 </span>
                 <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg bg-zinc-900/50">
-                  <Image src="/logos/cashers.svg" alt="Cashers" width={160} height={36} className="h-8 w-auto" />
+                  <Image src="/logos/cashers.png" alt="Cashers" width={180} height={48} className="h-10 w-auto object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Cashers</h3>
-                <p className="mt-1 text-sm text-muted">Обменный сервис</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Ваш надёжный крипто-консьерж с&nbsp;2021&nbsp;г.
+                  Безопасные офисы во&nbsp;всех крупных городах.
+                </p>
               </div>
             </div>
           </AnimatedSection>
@@ -45,10 +48,14 @@ export default function Sponsors() {
                   Партнёр
                 </span>
                 <div className="mb-4 flex h-16 w-full items-center justify-center rounded-lg bg-zinc-900/50">
-                  <Image src="/logos/delta.svg" alt="Delta Prop" width={140} height={36} className="h-7 w-auto" />
+                  <Image src="/logos/delta.png" alt="Delta Prop" width={160} height={48} className="h-10 w-auto object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Delta Prop</h3>
-                <p className="mt-1 text-sm text-muted">Проп-компания</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Проп-трейдинговая компания с&nbsp;десятками успешных трейдеров
+                  и&nbsp;уникальными технологическими решениями для рынка арбитража
+                  и&nbsp;кросс-маркет стратегий.
+                </p>
               </div>
             </div>
           </AnimatedSection>
