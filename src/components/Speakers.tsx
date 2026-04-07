@@ -4,40 +4,52 @@ import AnimatedSection from "./AnimatedSection";
 
 const speakers = [
   {
-    name: "Спикер 1",
-    role: "CEO, Компания",
-    desc: "Эксперт по арбитражным стратегиям между MOEX и глобальными рынками",
-    photo: "https://api.dicebear.com/9.x/notionists/svg?seed=Felix&backgroundColor=09090b",
+    name: "Александр Шпагин",
+    role: "CIS BD Lead, MEXC",
+    desc: "Автор канала «крипта для опоздавших», победитель премии «Открытие года» на 0xConnect 2025, магистр маркетинга ВШЭ",
+    photo: "/speakers/shpagin.jpg",
+    logo: "/logos/mexc.svg",
+    logoClass: "h-4 brightness-0 invert",
   },
   {
-    name: "Спикер 2",
-    role: "Head of Trading, Компания",
-    desc: "Специалист по дельта-нейтральным стратегиям и управлению рисками",
-    photo: "https://api.dicebear.com/9.x/notionists/svg?seed=Aneka&backgroundColor=09090b",
+    name: "Владимир Цыбенко",
+    role: "Руководитель Управления инвестиционного консультирования, Финам",
+    desc: "Закончил МЭСИ, специальность — «Антикризисное управление». В «Финаме» работает с 2006 года",
+    photo: "/speakers/tsybenko.jpg",
+    logo: "/logos/finam.png",
+    logoClass: "h-6",
   },
   {
-    name: "Спикер 3",
-    role: "Директор по развитию, Компания",
-    desc: "Руководитель направления кросс-маркет инфраструктуры",
-    photo: "https://api.dicebear.com/9.x/notionists/svg?seed=Leo&backgroundColor=09090b",
+    name: "XXX",
+    role: "Спикер, CIFRA markets",
+    desc: "Будет объявлен в ближайшее время",
+    photo: null,
+    logo: "/logos/cifra.svg",
+    logoClass: "h-4 brightness-0 invert",
   },
   {
-    name: "Спикер 4",
-    role: "Основатель, Компания",
-    desc: "Основатель проп-трейдинговой компании с фокусом на крипто-арбитраж",
-    photo: "https://api.dicebear.com/9.x/notionists/svg?seed=Nolan&backgroundColor=09090b",
+    name: "XXX",
+    role: "Спикер, Финам",
+    desc: "Будет объявлен в ближайшее время",
+    photo: null,
+    logo: "/logos/finam.png",
+    logoClass: "h-6",
   },
   {
-    name: "Спикер 5",
-    role: "CTO, Компания",
-    desc: "Архитектор торговых систем и алгоритмов исполнения",
-    photo: "https://api.dicebear.com/9.x/notionists/svg?seed=Brian&backgroundColor=09090b",
+    name: "XXX",
+    role: "Спикер",
+    desc: "Будет объявлен в ближайшее время",
+    photo: null,
+    logo: null,
+    logoClass: "",
   },
   {
-    name: "Спикер 6",
-    role: "Партнёр, Компания",
-    desc: "Консультант по рыночной инфраструктуре и регуляторным вопросам",
-    photo: "https://api.dicebear.com/9.x/notionists/svg?seed=Sarah&backgroundColor=09090b",
+    name: "XXX",
+    role: "Спикер",
+    desc: "Будет объявлен в ближайшее время",
+    photo: null,
+    logo: null,
+    logoClass: "",
   },
 ];
 
@@ -63,20 +75,32 @@ export default function Speakers() {
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {speakers.map((s, i) => (
-            <AnimatedSection key={s.name} delay={i * 0.06}>
+            <AnimatedSection key={`${s.name}-${i}`} delay={i * 0.06}>
               <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
-                {/* Photo */}
-                <div className="relative h-48 w-full overflow-hidden bg-zinc-900">
-                  <img
-                    src={s.photo}
-                    alt={s.name}
-                    className="h-full w-full object-cover opacity-80 transition-opacity group-hover:opacity-100"
-                  />
+                {/* Photo or placeholder */}
+                <div className="relative h-52 w-full overflow-hidden bg-zinc-900">
+                  {s.photo ? (
+                    <img
+                      src={s.photo}
+                      alt={s.name}
+                      className="h-full w-full object-cover object-top opacity-80 transition-opacity group-hover:opacity-100"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center">
+                      <span className="text-6xl font-bold text-zinc-700">?</span>
+                    </div>
+                  )}
                   {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/30 to-transparent" />
+                  {/* Company logo badge */}
+                  {s.logo && (
+                    <div className="absolute top-3 right-3 rounded-lg border border-card-border bg-zinc-900/80 px-2.5 py-1.5 backdrop-blur-sm">
+                      <img src={s.logo} alt="" className={`w-auto object-contain ${s.logoClass}`} />
+                    </div>
+                  )}
                 </div>
                 {/* Info */}
-                <div className="relative p-5 -mt-8">
+                <div className="relative p-5 -mt-10">
                   <h3 className="text-base font-bold">{s.name}</h3>
                   <p className="mt-0.5 text-xs font-medium text-accent">{s.role}</p>
                   <p className="mt-2 text-xs leading-relaxed text-zinc-500">{s.desc}</p>
@@ -85,12 +109,6 @@ export default function Speakers() {
             </AnimatedSection>
           ))}
         </div>
-
-        <AnimatedSection delay={0.4} className="mt-8 text-center">
-          <p className="text-sm text-muted">
-            Полный список спикеров будет объявлен в&nbsp;ближайшее время
-          </p>
-        </AnimatedSection>
       </div>
     </section>
   );
