@@ -20,34 +20,38 @@ const speakers = [
     logoClass: "h-6",
   },
   {
-    name: "XXX",
+    name: "Скоро",
     role: "Спикер, CIFRA markets",
-    desc: "Будет объявлен в ближайшее время",
+    desc: "Имя будет раскрыто ближе к мероприятию",
     photo: null,
+    mystery: true,
     logo: "/logos/cifra.svg",
     logoClass: "h-4 brightness-0 invert",
   },
   {
-    name: "XXX",
+    name: "Скоро",
     role: "Спикер, Финам",
-    desc: "Будет объявлен в ближайшее время",
+    desc: "Имя будет раскрыто ближе к мероприятию",
     photo: null,
+    mystery: true,
     logo: "/logos/finam.png",
     logoClass: "h-6",
   },
   {
-    name: "XXX",
+    name: "Скоро",
     role: "Спикер",
-    desc: "Будет объявлен в ближайшее время",
+    desc: "Следите за обновлениями",
     photo: null,
+    mystery: true,
     logo: null,
     logoClass: "",
   },
   {
-    name: "XXX",
+    name: "Скоро",
     role: "Спикер",
-    desc: "Будет объявлен в ближайшее время",
+    desc: "Следите за обновлениями",
     photo: null,
+    mystery: true,
     logo: null,
     logoClass: "",
   },
@@ -77,7 +81,7 @@ export default function Speakers() {
           {speakers.map((s, i) => (
             <AnimatedSection key={`${s.name}-${i}`} delay={i * 0.06}>
               <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
-                {/* Photo or placeholder */}
+                {/* Photo or mystery placeholder */}
                 <div className="relative h-52 w-full overflow-hidden bg-zinc-900">
                   {s.photo ? (
                     <img
@@ -86,8 +90,13 @@ export default function Speakers() {
                       className="h-full w-full object-cover object-top opacity-80 transition-opacity group-hover:opacity-100"
                     />
                   ) : (
-                    <div className="flex h-full w-full items-center justify-center">
-                      <span className="text-6xl font-bold text-zinc-700">?</span>
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-800/30 to-zinc-900">
+                      <div className="relative">
+                        <span className="text-7xl font-black text-accent/20 blur-[2px] group-hover:blur-0 group-hover:text-accent/30 transition-all duration-500">?</span>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="h-20 w-20 rounded-full border border-accent/10 animate-pulse-glow" />
+                        </div>
+                      </div>
                     </div>
                   )}
                   {/* Gradient overlay */}
@@ -101,7 +110,7 @@ export default function Speakers() {
                 </div>
                 {/* Info */}
                 <div className="relative p-5 -mt-10">
-                  <h3 className="text-base font-bold">{s.name}</h3>
+                  <h3 className={`text-base font-bold ${"mystery" in s && s.mystery ? "text-zinc-500 italic" : ""}`}>{s.name}</h3>
                   <p className="mt-0.5 text-xs font-medium text-accent">{s.role}</p>
                   <p className="mt-2 text-xs leading-relaxed text-zinc-500">{s.desc}</p>
                 </div>
