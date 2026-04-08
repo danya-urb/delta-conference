@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const trustLogos = [
   { name: "Finam", src: "/logos/finam.png", cls: "h-14" },
   { name: "MEXC", src: "/logos/mexc.svg", cls: "h-5 brightness-0 invert" },
-  { name: "CIFRA markets", src: "/logos/cifra.svg", cls: "h-4 brightness-0 invert" },
+  { name: "CIFRA markets", src: "/logos/cifra.png", cls: "h-5" },
   { name: "Delta", src: "/logos/delta.png", cls: "h-7" },
 ];
 

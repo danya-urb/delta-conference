@@ -24,8 +24,8 @@ const speakers = [
     role: "Ведущий аналитик, CIFRA markets",
     desc: "Более 9 лет в крипте. Регулярно публикуется в РБК, Forbes, Коммерсанте и других ведущих деловых СМИ",
     photo: "/speakers/kraiko.jpg",
-    logo: "/logos/cifra.svg",
-    logoClass: "h-4 brightness-0 invert",
+    logo: "/logos/cifra.png",
+    logoClass: "h-4",
   },
   {
     name: "Скоро",
