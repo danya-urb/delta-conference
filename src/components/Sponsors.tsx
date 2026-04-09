@@ -91,7 +91,7 @@ export default function Sponsors() {
                 <div className="pointer-events-none absolute -top-16 -left-16 h-[150px] w-[150px] rounded-full bg-purple-500/10 blur-[50px]" />
                 <div className="relative">
                   <div className="mb-3 flex items-center gap-3">
-                    <img src="/logos/cashers.png" alt="Cashers" className="h-8 w-auto" />
+                    <img src="/logos/cashers.png" alt="Cashers" className="h-12 w-auto" />
                     <span className="rounded-full bg-purple-500/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-purple-400">
                       Розыгрыш
                     </span>
