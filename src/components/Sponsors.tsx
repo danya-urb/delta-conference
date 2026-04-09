@@ -74,7 +74,7 @@ export default function Sponsors() {
                 <div className="pointer-events-none absolute -top-16 -right-16 h-[150px] w-[150px] rounded-full bg-accent/10 blur-[50px]" />
                 <div className="relative">
                   <div className="mb-3 flex items-center gap-3">
-                    <img src="/logos/delta.png" alt="Delta" className="h-6 w-auto" />
+                    <img src="/logos/delta.png" alt="Delta" className="h-10 w-auto" />
                     <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent">
                       Главный приз
                     </span>
