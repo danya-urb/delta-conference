@@ -4,6 +4,14 @@ import AnimatedSection from "./AnimatedSection";
 
 const speakers = [
   {
+    name: "Адам Джазири",
+    role: "Сооснователь Delta Team",
+    desc: "Трейдер и предприниматель с 6-летним опытом. Специализация — арбитражные стратегии и рыночные неэффективности. Ежемесячный оборот на MOEX — 2 млрд ₽",
+    photo: "/speakers/jaziri.jpg",
+    logo: "/logos/delta-team.jpg",
+    logoClass: "h-6 rounded",
+  },
+  {
     name: "Александр Шпагин",
     role: "CIS BD Lead, MEXC",
     desc: "Автор канала «крипта для опоздавших», победитель премии «Открытие года» на 0xConnect 2025, магистр маркетинга ВШЭ",
