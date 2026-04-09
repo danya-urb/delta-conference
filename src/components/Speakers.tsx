@@ -8,7 +8,7 @@ const speakers = [
     role: "Сооснователь Delta Team",
     desc: "Трейдер и предприниматель с 6-летним опытом. Специализация — арбитражные стратегии и рыночные неэффективности. Ежемесячный оборот на MOEX — 2 млрд ₽",
     photo: "/speakers/jaziri.jpg",
-    logo: "/logos/delta-team.jpg",
+    logo: "/logos/delta-team.png",
     logoClass: "h-6 rounded",
   },
   {
