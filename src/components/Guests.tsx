@@ -4,6 +4,13 @@ import AnimatedSection from "./AnimatedSection";
 
 const guests = [
   {
+    name: "Московская биржа",
+    full: "MOEX",
+    desc: "Крупнейшая биржевая группа России. Определяет правила игры для всего рынка.",
+    logo: "/logos/moex.svg",
+    cls: "h-8",
+  },
+  {
     name: "Финам",
     full: "Финам",
     desc: "Ведущий брокер и инвестиционная компания. Мост между вами и рынком.",

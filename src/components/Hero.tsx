@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 const trustLogos = [
+  { name: "MOEX", src: "/logos/moex.svg", cls: "h-6" },
   { name: "Finam", src: "/logos/finam.png", cls: "h-14" },
   { name: "MEXC", src: "/logos/mexc.svg", cls: "h-5 brightness-0 invert" },
   { name: "CIFRA markets", src: "/logos/cifra.png", cls: "h-5" },
