@@ -50,7 +50,7 @@ export default function Sponsors() {
                   Партнёр
                 </span>
                 <div className="mb-4 flex h-16 w-full items-center justify-center">
-                  <img src="/logos/cashers.png" alt="Cashers" className="h-10 w-auto object-contain" />
+                  <img src="/logos/cashers.png?v=2" alt="Cashers" className="h-14 w-auto object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold">Cashers</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -91,7 +91,7 @@ export default function Sponsors() {
                 <div className="pointer-events-none absolute -top-16 -left-16 h-[150px] w-[150px] rounded-full bg-purple-500/10 blur-[50px]" />
                 <div className="relative">
                   <div className="mb-3 flex items-center gap-3">
-                    <img src="/logos/cashers.png" alt="Cashers" className="h-12 w-auto" />
+                    <img src="/logos/cashers.png?v=2" alt="Cashers" className="h-14 w-auto" />
                     <span className="rounded-full bg-purple-500/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-purple-400">
                       Розыгрыш
                     </span>
