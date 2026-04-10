@@ -36,6 +36,14 @@ const speakers = [
     logoClass: "h-4",
   },
   {
+    name: "Мария Силкина",
+    role: "Главный менеджер по срочному рынку, MOEX",
+    desc: "Специалист Московской биржи по развитию срочного рынка",
+    photo: "/speakers/silkina.jpg",
+    logo: "/logos/moex.svg",
+    logoClass: "h-6",
+  },
+  {
     name: "Скоро",
     role: "Спикер, Финам",
     desc: "Имя будет раскрыто ближе к мероприятию",
