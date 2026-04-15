@@ -8,6 +8,7 @@ const speakers = [
     role: "Сооснователь Delta Team",
     desc: "Трейдер и предприниматель с 6-летним опытом. Специализация — арбитражные стратегии и рыночные неэффективности. Ежемесячный оборот на MOEX — 2 млрд ₽",
     photo: "/speakers/jaziri.jpg",
+    fullFrame: true,
     logo: "/logos/delta-team.png",
     logoClass: "h-6 rounded",
   },
@@ -48,6 +49,7 @@ const speakers = [
     role: "Главный менеджер по срочному рынку, MOEX",
     desc: "Специалист Московской биржи по развитию срочного рынка",
     photo: "/speakers/silkina.jpg",
+    fullFrame: true,
     logo: "/logos/moex.svg",
     logoClass: "h-6",
   },
@@ -105,12 +107,12 @@ export default function Speakers() {
             <AnimatedSection key={`${s.name}-${i}`} delay={i * 0.06}>
               <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
                 {/* Photo or mystery placeholder */}
-                <div className="relative h-52 w-full overflow-hidden bg-white">
+                <div className={`relative h-52 w-full overflow-hidden ${"fullFrame" in s && s.fullFrame ? "bg-white" : "bg-zinc-900"}`}>
                   {s.photo ? (
                     <img
                       src={s.photo}
                       alt={s.name}
-                      className="h-full w-full object-contain opacity-90 transition-opacity group-hover:opacity-100"
+                      className={`h-full w-full opacity-90 transition-opacity group-hover:opacity-100 ${"fullFrame" in s && s.fullFrame ? "object-contain" : "object-cover object-top"}`}
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-800/30 to-zinc-900">
