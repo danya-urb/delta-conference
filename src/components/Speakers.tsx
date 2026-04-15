@@ -103,18 +103,16 @@ export default function Speakers() {
         </AnimatedSection>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {speakers.map((s, i) => {
-            const isFullFrame = "fullFrame" in s && s.fullFrame;
-            return (
+          {speakers.map((s, i) => (
             <AnimatedSection key={`${s.name}-${i}`} delay={i * 0.06}>
               <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
                 {/* Photo or mystery placeholder */}
-                <div className={`relative w-full overflow-hidden ${isFullFrame ? "h-64 bg-white" : "h-52 bg-zinc-900"}`}>
+                <div className={`relative h-52 w-full overflow-hidden ${"fullFrame" in s && s.fullFrame ? "bg-white" : "bg-zinc-900"}`}>
                   {s.photo ? (
                     <img
                       src={s.photo}
                       alt={s.name}
-                      className={`h-full w-full opacity-90 transition-opacity group-hover:opacity-100 ${isFullFrame ? "object-contain object-top" : "object-cover object-top"}`}
+                      className={`h-full w-full opacity-90 transition-opacity group-hover:opacity-100 ${"fullFrame" in s && s.fullFrame ? "object-contain" : "object-cover object-top"}`}
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-800/30 to-zinc-900">
@@ -126,10 +124,8 @@ export default function Speakers() {
                       </div>
                     </div>
                   )}
-                  {/* Gradient overlay — only for dark photos, not fullFrame */}
-                  {!isFullFrame && (
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/30 to-transparent" />
-                  )}
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/30 to-transparent" />
                   {/* Company logo badge */}
                   {s.logo && (
                     <div className="absolute top-3 right-3 rounded-lg border border-card-border bg-zinc-900/80 px-2.5 py-1.5 backdrop-blur-sm">
@@ -138,15 +134,14 @@ export default function Speakers() {
                   )}
                 </div>
                 {/* Info */}
-                <div className={`relative p-5 ${isFullFrame ? "" : "-mt-10"}`}>
+                <div className="relative p-5 -mt-10">
                   <h3 className={`text-base font-bold ${"mystery" in s && s.mystery ? "text-zinc-500 italic" : ""}`}>{s.name}</h3>
                   <p className="mt-0.5 text-xs font-medium text-accent">{s.role}</p>
                   <p className="mt-2 text-xs leading-relaxed text-zinc-500">{s.desc}</p>
                 </div>
               </div>
             </AnimatedSection>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
