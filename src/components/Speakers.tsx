@@ -12,6 +12,14 @@ const speakers = [
     logoClass: "h-6 rounded",
   },
   {
+    name: "Георгий Шилов",
+    role: "Генеральный директор, Delta Prop",
+    desc: "Более 7 лет на рынках. Практик с опытом управления капиталом в арбитражных стратегиях объёмом до 500 млн ₽",
+    photo: null,
+    logo: "/logos/delta.png",
+    logoClass: "h-6",
+  },
+  {
     name: "Александр Шпагин",
     role: "CIS BD Lead, MEXC",
     desc: "Автор канала «крипта для опоздавших», победитель премии «Открытие года» на 0xConnect 2025, магистр маркетинга ВШЭ",
@@ -97,12 +105,12 @@ export default function Speakers() {
             <AnimatedSection key={`${s.name}-${i}`} delay={i * 0.06}>
               <div className="group relative overflow-hidden rounded-xl border border-card-border bg-card-bg backdrop-blur-sm transition-all hover:border-accent/20 hover:shadow-[0_0_30px_rgba(99,102,241,0.06)]">
                 {/* Photo or mystery placeholder */}
-                <div className="relative h-52 w-full overflow-hidden bg-zinc-900">
+                <div className="relative h-52 w-full overflow-hidden bg-white">
                   {s.photo ? (
                     <img
                       src={s.photo}
                       alt={s.name}
-                      className="h-full w-full object-cover object-top opacity-80 transition-opacity group-hover:opacity-100"
+                      className="h-full w-full object-contain opacity-90 transition-opacity group-hover:opacity-100"
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-800/30 to-zinc-900">

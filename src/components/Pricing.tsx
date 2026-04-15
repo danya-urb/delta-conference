@@ -5,7 +5,7 @@ import AnimatedSection from "./AnimatedSection";
 const tiers = [
   {
     name: "Классический",
-    price: "2 490",
+    price: "4 990",
     accent: false,
     features: [
       "Посещение конференции",
@@ -17,7 +17,7 @@ const tiers = [
   {
     name: "+1",
     subtitle: "2 человека",
-    price: "3 990",
+    price: "7 590",
     accent: false,
     features: [
       "2 билета по цене одного с половиной",
