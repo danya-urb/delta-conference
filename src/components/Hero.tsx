@@ -161,7 +161,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-5 text-sm text-accent/80 font-medium"
         >
-          Осталось всего 60 мест
+          Осталось всего 10 мест
         </motion.p>
 
         {/* Trust strip — participants */}
